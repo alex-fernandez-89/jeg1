@@ -2,53 +2,562 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 body{
     background-color: rgb(235, 228, 228);
 }
-nav{
-    background-color: rgb(80, 83, 80);
-    color: white;
-    background-image: url(../nav/Diseño\ sin\ título.svg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
 
-}
+/******************************/
+/* MEDIA QUERY 320px to 575px*/
+/******************************/
+
 @media (min-width: 320px) and (max-width: 575px) {
-    nav{
-        background-color: rgb(80, 83, 80);
-        color: white;
-        background-image: url(../nav/Diseño\ sin\ título.svg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: contain;
-    
+    .navbar{
+        background-color: rgb(131, 228, 92);
+        
     }
 
-    nav img{
-    
-    margin-left: 0em;
-    width: 15vw;
-    height: 12vh;
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
     }
+    .container-fluid img{
+        width: 10vw;
+        height: 8vh;
+    }
+
+    
+    .navbar-nav{
+        width: 35%;
+    }
+    .collapse{
+        justify-content:flex-end;
+        margin-inline-end: 1%;
+    }
+    .container-fluid button{
+        color: rgb(255, 255, 255);
+        
+    }
+    /*section 1 */
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nosotros p{
+        text-align: center;
+    }
+    /*section 2 */
+    .servicios h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias img{
+
+    }
+    .sabias p{
+        text-align: center;
+    }
+    /*section 3 */
+
+    footer{
+        background-color: rgb(74, 255, 74);
+       text-align: center;
+    }
+    .fa-instagram, .fa-solid, .fa-facebook{
+        color: white;
+        background-color: rgb(160, 153, 153);
+        border-radius: 50%;
+        font-size: 1.5em;
+        margin: 1%;
+
+    }
+    .container-boton{
+        background-color: #315a31fd;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 15px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .fa-whatsapp{
+        font-size: 3em;
+        color: white;
+    }
+
+
 }
 
-@media (min-width: 960px)  {
-    nav{
-        background-color: rgb(80, 83, 80);
-        color: white;
-        background-image: url(../nav/Diseño\ sin\ título.svg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: contain;
-    
+/******************************/
+/* MEDIA QUERY 768px to 992px */
+/******************************/
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar{
+        background-color: rgb(131, 228, 92);
+        
     }
 
-    nav img{
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-fluid img{
+        width: 10vw;
+        height: 8vh;
+    }
+
     
-    margin-left: 23em;
-    width: 8vw;
-    height: 12vh;
+    .navbar-nav{
+        width: 35%;
+    }
+    .collapse{
+        justify-content:flex-end;
+        margin-inline-end: 1%;
+    }
+    .container-fluid button{
+        color: rgb(255, 255, 255);
+        
+    }
+    /*section 1 */
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nosotros p{
+        text-align: center;
+    }
+    /*section 2 */
+    .servicios h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias img{
+
+    }
+    .sabias p{
+        text-align: center;
+    }
+    /*section 3 */
+
+    footer{
+        background-color: rgb(74, 255, 74);
+       text-align: center;
+    }
+    .fa-instagram, .fa-solid, .fa-facebook{
+        color: white;
+        background-color: rgb(160, 153, 153);
+        border-radius: 50%;
+        font-size: 1.5em;
+        margin: 1%;
+
+    }
+    .container-boton{
+        background-color: #315a31fd;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 15px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .fa-whatsapp{
+        font-size: 3em;
+        color: white;
+    }
+
+
 }
+
+/*********************/
+/* MEDIA QUERY 960PX*/
+/*********************/
+
+@media (min-width: 992px)  {
+    .navbar{
+        background-color: rgb(131, 228, 92);
+        
+    }
+
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-fluid img{
+        width: 8vw;
+        height: 12vh;
+    }
+
+    
+    .navbar-nav{
+        width: 35%;
+    }
+    .collapse{
+        justify-content:flex-end;
+        margin-inline-end: 1%;
+        
+    }
+    /*section 1 */
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nosotros p{
+        text-align: center;
+    }
+    /*section 2 */
+    .servicios h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias img{
+
+    }
+    .sabias p{
+        text-align: center;
+    }
+    /*section 3 */
+
+    footer{
+        background-color: rgb(74, 255, 74);
+       text-align: center;
+    }
+    .fa-instagram, .fa-solid, .fa-facebook{
+        color: white;
+        background-color: rgb(160, 153, 153);
+        border-radius: 50%;
+        font-size: 1.5em;
+        margin: 1%;
+
+    }
+    .container-boton{
+        background-color: #315a31fd;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 15px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .fa-whatsapp{
+        font-size: 3em;
+        color: white;
+    }
+
+
+}
+
+/*********************/
+/* MEDIA QUERY 1024PX*/
+/*********************/
+
+@media (min-width: 1024px)  {
+    .navbar{
+        background-color: rgb(131, 228, 92);
+        
+    }
+
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-fluid img{
+        width: 15vw;
+        height: 12vh;
+    }
+
+    
+    .navbar-nav{
+        width: 50%;
+    }
+    .collapse{
+        justify-content:flex-end;
+        margin-inline-end: 1%;
+        
+    }
+    /*section 1 */
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nosotros p{
+        text-align: center;
+    }
+    /*section 2 */
+    .servicios h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias img{
+
+    }
+    .sabias p{
+        text-align: center;
+    }
+    /*section 3 */
+
+    footer{
+        background-color: rgb(74, 255, 74);
+       text-align: center;
+    }
+    .fa-instagram, .fa-solid, .fa-facebook{
+        color: white;
+        background-color: rgb(160, 153, 153);
+        border-radius: 50%;
+        font-size: 1.5em;
+        margin: 1%;
+
+    }
+    .container-boton{
+        background-color: #315a31fd;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 15px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .fa-whatsapp{
+        font-size: 3em;
+        color: white;
+    }
+
+
+}
+
+/*********************/
+/* MEDIA QUERY 1300PX*/
+/*********************/
+
+@media (min-width: 1300px)  {
+    .navbar{
+        background-color: rgb(85, 102, 77);
+        
+    }
+
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-fluid img{
+        width: 12vw;
+        height: 12vh;
+    }
+
+    
+    .navbar-nav{
+        width: 40%;
+        
+    }
+    .collapse{
+        justify-content:flex-end;
+        margin-inline-end: 1%;
+        
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.55);
+    }
+    /*section 1 */
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nosotros p{
+        text-align: center;
+    }
+    /*section 2 */
+    .servicios h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias img{
+
+    }
+    .sabias p{
+        text-align: center;
+    }
+    /*section 3 */
+
+    footer{
+        background-color: rgb(74, 255, 74);
+       text-align: center;
+    }
+    .fa-instagram, .fa-solid, .fa-facebook{
+        color: white;
+        background-color: rgb(160, 153, 153);
+        border-radius: 50%;
+        font-size: 1.5em;
+        margin: 1%;
+
+    }
+    .container-boton{
+        background-color: #315a31fd;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 15px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .fa-whatsapp{
+        font-size: 3em;
+        color: white;
+    }
+
+
+}
+
+/*********************/
+/* MEDIA QUERY 2100PX*/
+/*********************/
+
+@media (min-width: 2100px)  {
+    .navbar{
+        background-color: rgb(85, 102, 77);
+        
+    }
+
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-fluid img{
+        width: 12vw;
+        height: 12vh;
+    }
+
+    
+    .navbar-nav{
+        width: 40%;
+        
+    }
+    .collapse{
+        justify-content:flex-end;
+        margin-inline-end: 1%;
+        
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.55);
+    }
+    /*section 1 */
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nosotros p{
+        text-align: center;
+    }
+    /*section 2 */
+    .servicios h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias h2{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sabias img{
+
+    }
+    .sabias p{
+        text-align: center;
+    }
+    /*section 3 */
+
+    footer{
+        background-color: rgb(74, 255, 74);
+       text-align: center;
+    }
+    .fa-instagram, .fa-solid, .fa-facebook{
+        color: white;
+        background-color: rgb(160, 153, 153);
+        border-radius: 50%;
+        font-size: 1.5em;
+        margin: 1%;
+
+    }
+    .container-boton{
+        background-color: #315a31fd;
+        position: fixed;
+        z-index: 999;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 25px;
+        padding: 15px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+    }
+    .container-boton:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .fa-whatsapp{
+        font-size: 3em;
+        color: white;
+    }
+
+
 }
