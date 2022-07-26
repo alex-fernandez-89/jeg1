@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(235, 228, 228);
+}
+nav{
+    background-color: rgb(80, 83, 80);
+    color: white;
+    background-image: url(../nav/Diseño\ sin\ título.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    nav{
+        background-color: rgb(80, 83, 80);
+        color: white;
+        background-image: url(../nav/Diseño\ sin\ título.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+    
+    }
+
+    nav img{
+    
+    margin-left: 0em;
+    width: 15vw;
+    height: 12vh;
+    }
+}
+
+@media (min-width: 960px)  {
+    nav{
+        background-color: rgb(80, 83, 80);
+        color: white;
+        background-image: url(../nav/Diseño\ sin\ título.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+    
+    }
+
+    nav img{
+    
+    margin-left: 23em;
+    width: 8vw;
+    height: 12vh;
+}
+}
