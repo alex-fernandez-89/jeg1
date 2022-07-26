@@ -5,7 +5,7 @@
     
 }
 body{
-    background-color: rgb(235, 228, 228);
+    background-color: rgb(231, 235, 228);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -58,6 +58,7 @@ body{
     }
     .nosotros p{
         text-align: center;
+        margin: 5px;
     }
     /*section 2 */
     .servicios h2{
@@ -73,6 +74,7 @@ body{
     }
     .sabias p{
         text-align: center;
+        margin: 5px;
     }
     /*section 3 */
 
@@ -170,6 +172,7 @@ body{
     }
     .nosotros p{
         text-align: center;
+        margin: 2px;
     }
     /*section 2 */
     .servicios h2{
@@ -185,6 +188,8 @@ body{
     }
     .sabias p{
         text-align: center;
+        margin: 2px;
+
     }
     /*section 3 */
 
@@ -268,6 +273,7 @@ body{
     }
     .nosotros p{
         text-align: center;
+        margin: 2px;
     }
     /*section 2 */
     .servicios h2{
@@ -283,6 +289,7 @@ body{
     }
     .sabias p{
         text-align: center;
+        margin: 2px;
     }
     /*section 3 */
 
@@ -366,6 +373,7 @@ body{
     }
     .nosotros p{
         text-align: center;
+        margin: 2px;
     }
     /*section 2 */
     .servicios h2{
@@ -381,6 +389,7 @@ body{
     }
     .sabias p{
         text-align: center;
+        margin: 2px;
     }
     /*section 3 */
 
@@ -429,10 +438,10 @@ body{
 }
 
 /*********************/
-/* MEDIA QUERY 1300PX*/
+/* MEDIA QUERY 1200PX*/
 /*********************/
 
-@media (min-width: 1300px)  {
+@media (min-width: 1200px)  {
     .navbar{
         background-color: rgb(85, 102, 77);
         
@@ -469,6 +478,7 @@ body{
     }
     .nosotros p{
         text-align: center;
+        margin: 10px;
     }
     /*section 2 */
     .servicios h2{
@@ -484,6 +494,7 @@ body{
     }
     .sabias p{
         text-align: center;
+        margin: 10px;
     }
     /*section 3 */
 
@@ -571,6 +582,7 @@ body{
     }
     .nosotros p{
         text-align: center;
+        margin: 2px;
     }
     /*section 2 */
     .servicios h2{
@@ -586,6 +598,7 @@ body{
     }
     .sabias p{
         text-align: center;
+        margin: 2px;
     }
     /*section 3 */
 
