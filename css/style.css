@@ -6,7 +6,9 @@
 }
 body{
     background-color: rgb(231, 235, 228);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: sans-serif;
+    
+    
 }
 
 /******************************/
@@ -22,6 +24,7 @@ body{
     .container-fluid{
         display: flex;
         justify-content: space-between;
+        
     }
     .container-fluid img{
         width: 18vw;
@@ -243,7 +246,7 @@ body{
 @media (min-width: 992px)  {
     .navbar{
         background-color: rgb(131, 228, 92);
-        
+     
     }
 
     .container-fluid{
@@ -296,6 +299,7 @@ body{
     footer{
         background-color: rgb(74, 255, 74);
        text-align: center;
+       
     }
     .fa-instagram, .fa-solid, .fa-facebook{
         color: white;
